@@ -6,7 +6,7 @@
     "email": "osepulve@ucdavis.edu",
     "phone": "",
     "url": "https://osepulve.github.io/",
-    "summary": "A Chilean-born water resources engineer dedicated to field-based experimental research in environmental fluid mechanics: From lakes to polar oceans.",
+    "summary": "Water resources and hydraulics engineer focusing on field-based experimental research in environmental fluid mechanics: From lakes to polar oceans.",
     "location": {
       "address": "One Shields Ave",
       "postalCode": "CA 95616",
@@ -37,13 +37,14 @@
     {
       "institution": "École Polytechnique Fédérale de Lausanne (EPFL)",
       "location": "Lausanne, Switzerland",
-      "url": "https://www.epfl.ch/",
-      "area": "Aquatic Physics Laboratory – Prof. Alfred \"Johny\" Wüest",
-      "studyType": "PhD",
+      "url": "https://infoscience.epfl.ch/record/279776?ln=en",
+      "area": "Aquatic Physics Laboratory. Supervisor: Prof. Alfred \"Johny\" Wüest",
+      "studyType": "Ph.D. in Civil and Environmental Engineering",
       "startDate": "2016-03-01",
       "endDate": "2020-09-17",
       "score": "",
-      "courses": ""
+      "courses": "Thesis title: Mixing processes and their ecological implications: From vertical to lateral variability
+in stratified lakes"
     }
   ],
   "certificates": [
@@ -104,11 +105,11 @@
       "name": "Professor Alfred \"Johny\" Wüest",
       "organization": "EPFL and Eawag",
       "url": "https://scholar.google.com/citations?user=hgkgsdMAAAAJ&hl=en",
-      "icon": "fa-solid fa-laptop",
+      "icon": "fa-solid fa-thumbtack",
       "reference": "PhD supervisor"
     },
     {
-      "name": "Professor Damien Bouffard",
+      "name": "<a href='https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/damien-bouffard/show/'>Professor Damien Bouffard</a>",
       "organization": "Eawag",
       "url": "https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/damien-bouffard/show/",
       "icon": "fa-solid fa-thumbtack",
