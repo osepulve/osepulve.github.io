@@ -24,7 +24,7 @@
   },
   "work": [
     {
-      "name": "Tahoe Environmental Research Center (TERC), University of California, Davis (UC Davis)",
+      "name": "Tahoe Environmental Research Center (TERC)\n University of California, Davis (UC Davis)",
       "position": "Assistant Project Scientist",
       "url": "https://tahoe.ucdavis.edu/people/oscar-sepulveda-steiner",
       "startDate": "2025-08-01",
@@ -33,29 +33,17 @@
       "highlights": ["Environmental Fluid Mechanics", "Physical Limnology", "Biophysical coupling", "Turbulence", "Mixing"]
     }
   ],
-  "volunteer": [
-  {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
   "education": [
     {
       "institution": "École Polytechnique Fédérale de Lausanne (EPFL)",
       "location": "Lausanne, Switzerland",
       "url": "https://www.epfl.ch/",
-      "area": "Aquatic Physics",
+      "area": "Aquatic Physics Laboratory – Prof. Alfred "Johny" Wüest",
       "studyType": "PhD",
       "startDate": "2016-03-01",
       "endDate": "2020-09-17",
       "score": "",
-      "courses": [""]
+      "courses": ""
     }
   ],
   "certificates": [
@@ -63,7 +51,7 @@
       "name": "Eﬀective teaching series",
       "date": "2025",
       "issuer": "UC Davis",
-      "icon": "fa-solid fa-location-dot"
+      "icon": "fa-solid fa-tag"
     },
     {
       "name": "Mentoring academy for postdoctoral scholars",
@@ -75,7 +63,7 @@
       "name": "Scientific leadership and management skills",
       "date": "2024",
       "issuer": "UC Davis",
-      "icon": "fa-solid fa-envelope"
+      "icon": "fa-solid fa-tag"
     }
   ],
   "languages": [
@@ -103,7 +91,7 @@
   "interests": [
     {
       "name": "Environmental Fluid Mechanics",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-thumbtack",
       "keywords": [
         "Turbulence",
         "Mixing",
