@@ -515,7 +515,7 @@ ninja.data = [{
         title: 'ResearchGate',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.researchgate.net/profile/https://www.researchgate.net/profile/Oscar-Sepulveda-Steiner/", "_blank");
+          window.open("https://www.researchgate.net/profile/Oscar-Sepulveda-Steiner/", "_blank");
         },
       },{
         id: 'social-scholar',
