@@ -4,7 +4,7 @@
     "label": "Scientist",
     "image": "",
     "email": "osepulve@ucdavis.edu",
-    "phone": ""
+    "phone": "",
     "url": "https://osepulve.github.io/",
     "summary": "A Chilean-born water resources engineer dedicated to field-based experimental research in environmental fluid mechanics: From lakes to polar oceans.",
     "location": {
@@ -16,15 +16,15 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "",
+        "username": "",
+        "url": ""
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
+      "name": "Tahoe Environmental Research Center (TERC), University of California, Davis (UC Davis)",
       "position": "Assistant Project Scientist",
       "url": "https://tahoe.ucdavis.edu/people/oscar-sepulveda-steiner",
       "startDate": "2025-08-01",
