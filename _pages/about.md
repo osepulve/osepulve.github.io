@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Tahoe Environmental Research Center <a href='https://tahoe.ucdavis.edu/people/oscar-sepulveda-steiner'>(TERC)</a>,University of California, Davis (UC Davis). #  Address. Contacts. Motto. Etc.
+subtitle: Tahoe Environmental Research Center <a href='https://tahoe.ucdavis.edu/people/oscar-sepulveda-steiner'>(TERC)</a>, University of California, Davis (UC Davis). #  Address. Contacts. Motto. Etc.
 
 profile:
   align: right
