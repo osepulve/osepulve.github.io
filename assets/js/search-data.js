@@ -435,11 +435,31 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-flow-the-psychology-of-optimal-experience",
+      },{id: "books-eat-that-frog-21-great-ways-to-stop-procrastinating-and-get-more-done-in-less-time",
+          title: 'Eat That Frog! 21 Great Ways to Stop Procrastinating and Get More Done...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Eat_that_Frog/";
+            },},{id: "books-ego-is-the-enemy",
+          title: 'Ego Is the Enemy',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Ego/";
+            },},{id: "books-flow-the-psychology-of-optimal-experience",
           title: 'Flow: The Psychology of Optimal Experience',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Flow/";
+            },},{id: "books-steal-like-an-artist-10-things-nobody-told-you-about-being-creative",
+          title: 'Steal Like an Artist: 10 Things Nobody Told You About Being Creative',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Like_an_Artist/";
+            },},{id: "books-writing-science-how-to-write-papers-that-get-cited-and-proposals-that-get-funded",
+          title: 'Writing Science: How to Write Papers That Get Cited and Proposals That Get...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Schimel/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
