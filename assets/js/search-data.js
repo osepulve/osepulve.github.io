@@ -435,8 +435,8 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-flow-quot-quot-the-psychology-of-optimal-experience",
-          title: 'Flow&amp;quot;:&amp;quot; The Psychology of Optimal Experience',
+      },{id: "books-flow-39-39-the-psychology-of-optimal-experience",
+          title: 'Flow&amp;#39;:&amp;#39; The Psychology of Optimal Experience',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Flow/";
