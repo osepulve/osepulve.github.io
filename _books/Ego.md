@@ -12,4 +12,5 @@ finished:
 released: 2016
 stars: 5
 goodreads_review: 
+status: "finished       "
 ---

@@ -12,5 +12,5 @@ finished:
 released: 2001
 stars: 5
 # goodreads_review: 
-# status: 
+status: "finished       "
 ---

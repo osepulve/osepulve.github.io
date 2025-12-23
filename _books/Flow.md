@@ -13,5 +13,5 @@ finished:
 released: 1990
 stars: 5
 goodreads_review: 
-status: 
+status: "finished       "
 ---
