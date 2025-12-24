@@ -7,59 +7,52 @@ layout: page
   {% assign all_items = site[page.collection] %}
   
   {% comment %} 
-    1. FORCE SEPARATION 
-    We create two distinct arrays. 
+    1. Group items by category 
   {% endcomment %}
-  {% assign mentoring_items = "" | split: "," %}
-  {% assign rest_of_items = "" | split: "," %}
+  {% assign category_groups = all_items | group_by: "category" %}
 
-  {% for item in all_items %}
-    {% if item.category == "Mentoring" %}
-      {% assign mentoring_items = mentoring_items | push: item %}
-    {% else %}
-      {% assign rest_of_items = rest_of_items | push: item %}
-    {% endif %}
-  {% endfor %}
-
-  {% comment %} 2. MENTORING SECTION {% endcomment %}
-  {% if mentoring_items.size > 0 %}
-    <h2 class="category">Mentoring</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
-      {% for item in mentoring_items %}
-        <figure class="cover" style="margin: 0; width: 150px;">
-          <a class="cover-link" href="{{ item.url | relative_url }}">
-            <img src="{% if item.cover %}{{ item.cover | relative_url }}{% else %}http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false{% endif %}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-            <figcaption style="text-align: center; font-size: 0.7rem; margin-top: 5px;">{{ item.title | truncate: 20 }}</figcaption>
-          </a>
-        </figure>
-      {% endfor %}
-    </div>
-    <hr style="border-top: 1px solid #eee; margin: 2rem 0;">
-  {% endif %}
-
-  {% comment %} 3. YEAR GROUPING (The original logic, but using the filtered list) {% endcomment %}
-  {% assign year = "" %}
-  {% assign sorted_others = rest_of_items | reverse %}
-  
-  {% for item in sorted_others %}
-    {% assign current_year = item.date | date: '%Y' %}
-    {% if current_year != year %}
-      {% unless forloop.first %}</ul>{% endunless %}
-      <h1 id="y{{ current_year }}" style="margin-top: 2rem;">
-        <a href="{{ current_year | prepend: '/books/' | relative_url }}">{{ current_year }}</a>
-      </h1>
-      <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 20px; padding: 0;">
-      {% assign year = current_year %}
-    {% endif %}
-
-    <li>
-      <figure class="cover" style="margin: 0; width: 150px;">
-        <a class="cover-link" href="{{ item.url | relative_url }}">
-          <img src="{% if item.cover %}{{ item.cover | relative_url }}{% elsif item.isbn %}http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false{% else %}http://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false{% endif %}" style="width: 100%; height: 200px; object-fit: cover;">
-          <figcaption style="text-align: center; font-size: 0.7rem;">{{ item.status | upcase | default: "READ" }}</figcaption>
+  {% for group in category_groups %}
+    {% if group.name != nil and group.name != "" %}
+      
+      {% comment %} The Clickable Heading {% endcomment %}
+      <h2 class="category">
+        <a href="{{ '/books/' | append: group.name | downcase | relative_url }}" style="text-decoration: none; color: inherit;">
+          {{ group.name }} <small>🔗</small>
         </a>
-      </figure>
-    </li>
-    {% if forloop.last %}</ul>{% endif %}
+      </h2>
+
+      <div class="bookshelf-grid" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+        {% for item in group.items %}
+          <figure class="cover" style="margin: 0; width: 150px;">
+            <a class="cover-link" href="{{ item.url | relative_url }}">
+              <img src="{% if item.cover %}{{ item.cover | relative_url }}{% else %}http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false{% endif %}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+            </a>
+          </figure>
+        {% endfor %}
+      </div>
+      <hr>
+    {% endif %}
   {% endfor %}
+
+  {% comment %} 
+    2. The Remaining Books (By Year) 
+    Only shows books that have NO category assigned.
+  {% endcomment %}
+  {% assign uncategorized = all_items | where: "category", nil %}
+  {% if uncategorized.size > 0 %}
+    <h2 class="category">Recent Reads</h2>
+    {% assign year = "" %}
+    {% for item in uncategorized reversed %}
+      {% assign current_year = item.date | date: '%Y' %}
+      {% if current_year != year %}
+        <h3 id="y{{ current_year }}" style="margin-top: 2rem;">{{ current_year }}</h3>
+        <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 20px; padding: 0;">
+        {% assign year = current_year %}
+      {% endif %}
+      <li>
+        <img src="{{ item.cover | relative_url }}" style="width: 120px; height: 170px; object-fit: cover;">
+      </li>
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+  {% endif %}
 {% endif %}
