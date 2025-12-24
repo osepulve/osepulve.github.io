@@ -5,52 +5,120 @@ layout: page
 
 {% if page.collection %}
   {% assign all_items = site[page.collection] %}
-  
-  {% comment %} 
-    1. Group items by category 
-  {% endcomment %}
-  {% assign category_groups = all_items | group_by: "category" %}
 
-  {% for group in category_groups %}
-    {% if group.name != nil and group.name != "" %}
-      
-      {% comment %} The Clickable Heading {% endcomment %}
+  {% comment %} --- MODE 1: SINGLE CATEGORY VIEW --- {% endcomment %}
+  {% if page.display_category %}
+    {% assign filtered_books = all_items | where: "category", page.display_category %}
+    
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        {% for item in filtered_books %}
+          <div class="col mb-4" style="display: flex; justify-content: center;">
+             <figure class="cover">
+                <a class="cover-link" href="{{ item.url | relative_url }}">
+                  {% if item.cover %}
+                    <img alt="{{ item.title }} cover" src="{{ item.cover | prepend: page.covers | relative_url }}" style="height:200px">
+                  {% elsif item.olid %}
+                    <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false" style="height:200px">
+                  {% elsif item.isbn %}
+                    <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false" style="height:200px">
+                  {% endif %}
+                  {% if item.status %}
+                    {% assign statuses = 'abandoned,finished,interested,paused,queued,reading,reread' | split: ',' %}
+                    {% assign status = item.status | downcase | strip %}
+                    {% if statuses contains status %}
+                      <figcaption class="{{ status | downcase }}">{{ status | upcase }}</figcaption>
+                    {% else %}
+                      <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
+                    {% endif %}
+                  {% else %}
+                    <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
+                  {% endif %}
+                </a>
+              </figure>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="{{ '/books/' | relative_url }}" class="btn btn-sm btn-outline-primary">← Back to Full Bookshelf</a>
+    </div>
+
+  {% else %}
+    {% comment %} --- MODE 2: FULL MAIN BOOKSHELF --- {% endcomment %}
+    
+    {% assign mentoring_books = all_items | where: "category", "Mentoring" %}
+    {% assign other_books = all_items | where_exp: "item", "item.category != 'Mentoring'" %}
+
+    {% comment %} Part A: Mentoring Preview {% endcomment %}
+    {% if mentoring_books.size > 0 %}
       <h2 class="category">
-        <a href="{{ '/books/' | append: group.name | downcase | relative_url }}" style="text-decoration: none; color: inherit;">
-          {{ group.name }} <small>🔗</small>
-        </a>
+        <a href="{{ '/books/mentoring/' | relative_url }}" style="color: inherit; text-decoration: none;">Mentoring 🔗</a>
       </h2>
-
-      <div class="bookshelf-grid" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
-        {% for item in group.items %}
-          <figure class="cover" style="margin: 0; width: 150px;">
+      <h3 class="category-subtitle" style="font-weight: 300; margin-bottom: 1.5rem;">For current/prospective students</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+        {% for item in mentoring_books %}
+           <figure class="cover">
             <a class="cover-link" href="{{ item.url | relative_url }}">
-              <img src="{% if item.cover %}{{ item.cover | relative_url }}{% else %}http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false{% endif %}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+              {% if item.cover %}
+                <img alt="{{ item.title }} cover" src="{{ item.cover | prepend: page.covers | relative_url }}" style="height:200px">
+              {% elsif item.olid %}
+                <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false" style="height:200px">
+              {% elsif item.isbn %}
+                <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false" style="height:200px">
+              {% endif %}
+              {% if item.status %}
+                {% assign statuses = 'abandoned,finished,interested,paused,queued,reading,reread' | split: ',' %}
+                {% assign status = item.status | downcase | strip %}
+                {% if statuses contains status %}
+                  <figcaption class="{{ status | downcase }}">{{ status | upcase }}</figcaption>
+                {% else %}
+                  <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
+                {% endif %}
+              {% else %}
+                <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
+              {% endif %}
             </a>
           </figure>
         {% endfor %}
       </div>
       <hr>
     {% endif %}
-  {% endfor %}
 
-  {% comment %} 
-    2. The Remaining Books (By Year) 
-    Only shows books that have NO category assigned.
-  {% endcomment %}
-  {% assign uncategorized = all_items | where: "category", nil %}
-  {% if uncategorized.size > 0 %}
-    <h2 class="category">Recent Reads</h2>
+    {% comment %} Part B: All Other Books by Year {% endcomment %}
     {% assign year = "" %}
-    {% for item in uncategorized reversed %}
+    {% for item in other_books reversed %}
       {% assign current_year = item.date | date: '%Y' %}
       {% if current_year != year %}
-        <h3 id="y{{ current_year }}" style="margin-top: 2rem;">{{ current_year }}</h3>
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h2 class="category">{{ current_year }}</h2>
         <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 20px; padding: 0;">
         {% assign year = current_year %}
       {% endif %}
       <li>
-        <img src="{{ item.cover | relative_url }}" style="width: 120px; height: 170px; object-fit: cover;">
+         <figure class="cover">
+          <a class="cover-link" href="{{ item.url | relative_url }}">
+            {% if item.cover %}
+              <img alt="{{ item.title }} cover" src="{{ item.cover | prepend: page.covers | relative_url }}" style="height:200px">
+            {% elsif item.olid %}
+              <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false" style="height:200px">
+            {% elsif item.isbn %}
+              <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false" style="height:200px">
+            {% endif %}
+            {% if item.status %}
+              {% assign statuses = 'abandoned,finished,interested,paused,queued,reading,reread' | split: ',' %}
+              {% assign status = item.status | downcase | strip %}
+              {% if statuses contains status %}
+                <figcaption class="{{ status | downcase }}">{{ status | upcase }}</figcaption>
+              {% else %}
+                <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
+              {% endif %}
+            {% else %}
+              <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
+            {% endif %}
+          </a>
+        </figure>
       </li>
       {% if forloop.last %}</ul>{% endif %}
     {% endfor %}
