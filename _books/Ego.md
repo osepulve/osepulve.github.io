@@ -4,7 +4,7 @@ title: Ego Is the Enemy
 author: Ryan Holiday
 cover: assets/img/book_covers/Ego.jpg
 isbn: 1591847818
-categories:
+category: Mentoring  # This is the key for grouping
 tags:
 buy_link:
 started:

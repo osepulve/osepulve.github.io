@@ -4,7 +4,7 @@ title: Eat That Frog! 21 Great Ways to Stop Procrastinating and Get More Done in
 author: Brian Tracy
 cover: assets/img/book_covers/Eat_that_Frog.jpg
 isbn: 162656941X
-categories:
+category:
 tags:
 buy_link:
 started:

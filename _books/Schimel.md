@@ -5,7 +5,7 @@ title: >-
 author: Joshua Schimel
 cover: assets/img/book_covers/Schimel.jpg
 isbn: 0199760241
-categories:
+category: Mentoring  # This is the key for grouping
 tags:
 started:
 finished: 
