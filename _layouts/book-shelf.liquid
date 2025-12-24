@@ -4,46 +4,50 @@ layout: page
 {{ content }}
 
 {% if page.collection and page.collection.size > 0 %}
-  {% assign collection = site[page.collection] %}
-  {% if collection and collection.size > 0 %}
-    {% for item in collection reversed %}
+  {% assign all_items = site[page.collection] %}
+  
+  {% comment %} 1. Separate Mentoring and Others {% endcomment %}
+  {% assign mentoring_items = all_items | where: "category", "Mentoring" %}
+  {% assign other_items = all_items | where_exp: "item", "item.category != 'Mentoring'" %}
+
+  {% comment %} 2. Render Mentoring Section First {% endcomment %}
+  {% if mentoring_items.size > 0 %}
+    <h2 class="category">Mentoring</h2>
+    <div class="bookshelf-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+      {% for item in mentoring_items %}
+        {% include book_card.liquid %} 
+      {% endfor %}
+    </div>
+    <hr style="margin: 3rem 0;">
+  {% endif %}
+
+  {% comment %} 3. Render the rest grouped by year (Original Logic) {% endcomment %}
+  {% if other_items.size > 0 %}
+    {% for item in other_items reversed %}
       {% assign current_year = item.date | date: '%Y' %}
       {% if current_year != year %}
-        {% unless forloop.first %}
-          </ul>
-        {% endunless %}
-        <h1 id="y{{item.date | date: "%Y"}}">
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h1 id="y{{item.date | date: '%Y'}}">
           <a href="{{ current_year | prepend: '/books/' | relative_url }}">{{ current_year }}</a>
         </h1>
-        <ul>
+        <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 20px; padding: 0;">
           {% assign year = current_year %}
       {% endif %}
 
-      <figure class="cover">
+      <figure class="cover" style="margin: 0;">
         <a class="cover-link" href="{{ item.url | relative_url }}">
           {% if item.cover %}
-            <img alt="{{ item.title }} cover" src="{{ item.cover | prepend: page.covers | relative_url }}" style="height:200px">
+            <img alt="{{ item.title }} cover" src="{{ item.cover | relative_url }}" style="height:200px">
           {% elsif item.olid %}
             <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false" style="height:200px">
           {% elsif item.isbn %}
             <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false" style="height:200px">
           {% endif %}
-          {% if item.status %}
-            {% assign statuses = 'abandoned,finished,interested,paused,queued,reading,reread' | split: ',' %}
-            {% assign status = item.status | downcase | strip %}
-            {% if statuses contains status %}
-              <figcaption class="{{ status | downcase }}">{{ status | upcase }}</figcaption>
-            {% else %}
-              <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
-            {% endif %}
-          {% else %}
-            <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
-          {% endif %}
+          <figcaption style="text-align: center; font-size: 0.8rem;">{{ item.status | upcase | default: "UNCATEGORIZED" }}</figcaption>
         </a>
       </figure>
-      {% if forloop.last %}
-        </ul>
-      {% endif %}
+
+      {% if forloop.last %}</ul>{% endif %}
     {% endfor %}
   {% endif %}
 {% endif %}
