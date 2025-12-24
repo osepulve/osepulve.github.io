@@ -29,12 +29,13 @@ layout: page
     {% assign mentoring_books = sorted_items | where: "category", "Mentoring" %}
     {% assign other_books = sorted_items | where_exp: "item", "item.category != 'Mentoring'" %}
 
-    {% comment %} Part A: Mentoring (Now following your original reversed date order) {% endcomment %}
+    {% comment %} Part A: Mentoring Preview with Themed Link {% endcomment %}
     {% if mentoring_books.size > 0 %}
       <h2 class="category">
-        <a href="{{ '/books/mentoring/' | relative_url }}" style="color: inherit; text-decoration: none;">Mentoring 🔗</a>
+        <a href="{{ '/books/mentoring/' | relative_url }}" class="category-link">Mentoring</a>
       </h2>
       <h3 class="category-subtitle" style="font-weight: 300; margin-bottom: 1.5rem;">For current/prospective students</h3>
+  
       <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
         {% for item in mentoring_books %}
            {% include book_figure.liquid %}
