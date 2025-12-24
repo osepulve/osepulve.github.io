@@ -5,7 +5,7 @@ title: >-
 author: Mihaly Csikszentmihalyi
 cover: assets/img/book_covers/Flow.jpg
 isbn: 0061339202 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories:
+category: Mentoring  # This is the key for grouping
 tags:
 buy_link:
 started:
