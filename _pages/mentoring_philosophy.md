@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Mentoring
+title: mentoring
 permalink: /mentoring/
 nav: true
-nav_order: 7
+nav_order: 6
 description: Resources, advice, and snippets for my students and mentees.
 ---
 
