@@ -51,6 +51,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-mentoring",
+          title: "Mentoring",
+          description: "Resources, advice, and snippets for my students and mentees.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/mentoring/";
+          },
         },{id: "dropdown-bookshelf",
               title: "bookshelf",
               description: "",
