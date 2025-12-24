@@ -1,6 +1,6 @@
 ---
 layout: book-shelf
-title: Mentoring Recommendations
+title: Mentoring
 permalink: /books/mentoring/
 collection: books
 display_category: Mentoring
