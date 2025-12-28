@@ -1,26 +1,44 @@
 ---
 layout: default
 ---
+
+<style>
+  /* This forces the specific spacing */
+  #hero-banner-container {
+    margin-bottom: 8px !important; /* Adjust this number to your liking */
+  }
+  .post-header {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  .post-title {
+    margin-top: 0 !important;
+  }
+</style>
+
 <div class="post">
 
-  <div class="header-banner" style="
+  <div id="hero-banner-container" class="header-banner" style="
+      position: relative;
+      width: 100%; 
+      overflow: hidden; 
+      border-radius: 4px;">
+
+{% comment %} 
+<div class="header-banner" style="
       position: relative; 
       width: 100%; 
       overflow: hidden;
       border-radius: 4px; 
-      z-index: 1;
-      margin-bottom: 5px !important; /* Forces a small 5px gap */
-      padding-bottom: 0 !important;   /* Ensures no internal container space */
-      ">
+      z-index: 1;">
     
     <div class="position-relative" style="width: 100%; height: auto;">
       <img src="{{ '/assets/img/banner.jpg' | relative_url }}" 
            style="width: 100%; height: auto; display: block; border-radius: 4px;">
-
-{% comment %}      
+  
 <div style="
           position: absolute; 
-          bottom: 12px; 
+          top: 15px; 
           left: 15px; 
           z-index: 99;
           pointer-events: none;">
@@ -80,8 +98,8 @@ layout: default
     </div>
   </div>
 
-  <header class="post-header" style="padding-top: 0 !important; margin-top: 0 !important;">
-    <h1 class="post-title" style="margin-top: 0 !important; line-height: 1;">
+  <header class="post-header">
+    <h1 class="post-title">
       {% if site.title == 'blank' %}
         {{ site.first_name }} {{ site.middle_name }} 
         <span class="font-weight-bold">{{ site.last_name }}</span>
