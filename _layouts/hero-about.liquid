@@ -1,72 +1,18 @@
 ---
 layout: default
 ---
-
-<style>
-  /* This targets the header container specifically */
-  .post-header {
-    margin-top: -15px !important; /* The 'Nuclear' pull */
-    padding-top: 0 !important;
-    margin-bottom: 20px !important; /* Keeps space between name and bio */
-  }
-  
-  .header-banner {
-    display: block !important; 
-    margin-bottom: 0 !important; 
-  }
-</style>
-
 <div class="post">
 
-  <div id="hero-banner-container" class="header-banner" style="
-      position: relative;
-      width: 100%; 
-      overflow: hidden; 
-      border-radius: 4px;">
-
-    <div class="position-relative" style="width: 100%; height: auto;">
-      <img src="{{ '/assets/img/banner.jpg' | relative_url }}" 
-           style="width: 100%; height: auto; display: block; border-radius: 4px;">
-
-{% comment %} 
-<div class="header-banner" style="
+  <div class="header-banner mb-1" style="
       position: relative; 
       width: 100%; 
       overflow: hidden;
       border-radius: 4px; 
       z-index: 1;">
-  
-<div style="
-          position: absolute; 
-          top: 15px; 
-          left: 15px; 
-          z-index: 99;
-          pointer-events: none;">
-        <h1 style="
-            font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Arimo', sans-serif !important; 
-            font-weight: 800; 
-            color: #000000 !important; 
-            font-size: clamp(1rem, 2.5vw, 1.5rem); 
-            margin: 0;
-            white-space: nowrap;
-            letter-spacing: 0.3px;
-            /* PATH EFFECT: Thick White Stroke (linewidth=13 style) */
-            text-shadow: 
-               2.5px  2.5px 0 #fff,
-              -2.5px  2.5px 0 #fff,
-               2.5px -2.5px 0 #fff,
-              -2.5px -2.5px 0 #fff,
-               2.5px  0px   0 #fff,
-              -2.5px  0px   0 #fff,
-               0px    2.5px 0 #fff,
-               0px   -2.5px 0 #fff;
-            ">
-          Environmental Fluid Mechanics
-        </h1>
-      </div>
-    </div>
-  </div>
-{% endcomment %}
+    
+    <div class="position-relative" style="width: 100%; height: auto;">
+      <img src="{{ '/assets/img/banner.jpg' | relative_url }}" 
+           style="width: 100%; height: auto; display: block; border-radius: 4px;">
 
 <div style="
           position: absolute; 
