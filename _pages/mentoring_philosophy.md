@@ -30,7 +30,7 @@ I will try my best to share my experiences, give you advice and provide you with
 -->
 
 <figure style="text-align: center;">
-  <img src="{{ '/assets/mentoring/Csikszentmihalyi_framework.jpg' | relative_url }}" 
+  <img src="{{ '/assets/img/mentoring/Csikszentmihalyi_framework.jpg' | relative_url }}" 
        alt="Mentoring Framework" 
        style="width: 60%; border-radius: 8px; height: auto;">
   <figcaption style="font-size: 0.9rem; margin-top: 8px;">
