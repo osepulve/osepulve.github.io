@@ -8,6 +8,15 @@ layout: default
     padding-top: 0 !important;   /* Removes the theme's default top padding */
     margin-top: -25px !important; /* Pulls the banner higher. Adjust this value as needed. */
   }
+  /* Forces the profile contact info to use the global theme font */
+  .profile .more-info, 
+  .profile .more-info p, 
+  .profile .more-info span,
+  .profile .more-info div {
+    font-family: var(--global-font-family) !important;
+    font-variant-caps: normal !important;
+    text-transform: none !important;
+  }
 </style>
 
 <div class="post">
