@@ -3,12 +3,15 @@ layout: default
 ---
 <div class="post">
 
-  <div class="header-banner mb-1" style="
+  <div class="header-banner" style="
       position: relative; 
       width: 100%; 
       overflow: hidden;
       border-radius: 4px; 
-      z-index: 1;">
+      z-index: 1;
+      margin-bottom: 5px !important; /* Forces a small 5px gap */
+      padding-bottom: 0 !important;   /* Ensures no internal container space */
+      ">
     
     <div class="position-relative" style="width: 100%; height: auto;">
       <img src="{{ '/assets/img/banner.jpg' | relative_url }}" 
