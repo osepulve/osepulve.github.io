@@ -46,7 +46,7 @@ ninja.data = [{
           },
         },{id: "nav-mentoring",
           title: "mentoring",
-          description: "Resources, advice, and snippets for my students and mentees.",
+          description: "Resources and advice for my students and mentees.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/mentoring/";
