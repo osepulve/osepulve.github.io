@@ -4,7 +4,7 @@ title: mentoring
 permalink: /mentoring/
 nav: true
 nav_order: 6
-description: Resources, advice, and snippets for my students and mentees.
+description: Resources and advice for my students and mentees.
 ---
 
 ## Philosophy
@@ -22,13 +22,6 @@ I value diverse backgrounds and experiences. I have worked in three countries ac
 
 I will try my best to share my experiences, give you advice and provide you with as many opportunities as possible for self- and scientific development. But I also expect ownership from you. The way I work with my mentees can be summarized in the following schematic:
 
-<!--
-<figure style="text-align: center;">
-  <img src="{{ '/assets/img/mentoring/Csikszentmihalyi_framework.jpg' | relative_url }}" alt="Mentoring Framework" style="width: 80%; border-radius: 8px;">
-  <figcaption>From “Flow: The psychology of optimal experience” by Mihaly Csikszentmihalyi (see [Mentoring bookshelf](https://osepulve.github.io/books/mentoring/)).</figcaption>
-</figure>
--->
-
 <figure style="text-align: center;">
   <img src="{{ '/assets/img/mentoring/Csikszentmihalyi_framework.jpg' | relative_url }}" 
        alt="Mentoring Framework" 
@@ -43,23 +36,3 @@ My job is to keep you in the flow channel. I will challenge you to reach new hei
 I welcome potential students to reach out and ask any questions you may have about my mentoring style.
 
 Best; Oscar
-
----
-
-### Key Frameworks
-You can include images or figures easily using Markdown or HTML.
-
-<figure style="text-align: center;">
-  <img src="{{ '/assets/img/mentoring-framework.png' | relative_url }}" alt="Mentoring Framework" style="width: 80%; border-radius: 8px;">
-  <figcaption>Figure 1: My approach to collaborative research and growth.</figcaption>
-</figure>
-
-### Technical Guides
-If you need to share code snippets with your students (e.g., how to set up a research environment), al-folio handles syntax highlighting beautifully:
-
-```python
-def research_workflow(data):
-    """A simple snippet for data cleaning."""
-    cleaned_data = data.dropna()
-    print("Ready for analysis!")
-    return cleaned_data
