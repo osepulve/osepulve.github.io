@@ -22,9 +22,20 @@ I value diverse backgrounds and experiences. I have worked in three countries ac
 
 I will try my best to share my experiences, give you advice and provide you with as many opportunities as possible for self- and scientific development. But I also expect ownership from you. The way I work with my mentees can be summarized in the following schematic:
 
+<!--
 <figure style="text-align: center;">
   <img src="{{ '/assets/img/mentoring/Csikszentmihalyi_framework.jpg' | relative_url }}" alt="Mentoring Framework" style="width: 80%; border-radius: 8px;">
   <figcaption>From “Flow: The psychology of optimal experience” by Mihaly Csikszentmihalyi (see [Mentoring bookshelf](https://osepulve.github.io/books/mentoring/)).</figcaption>
+</figure>
+-->
+
+<figure style="text-align: center;">
+  <img src="{{ '/assets/mentoring/Csikszentmihalyi_framework.jpg' | relative_url }}" 
+       alt="Mentoring Framework" 
+       style="width: 60%; border-radius: 8px; height: auto;">
+  <figcaption style="font-size: 0.9rem; margin-top: 8px;">
+    From “Flow: The psychology of optimal experience” by Mihaly Csikszentmihalyi (see <a href="https://osepulve.github.io/books/mentoring/" target="_blank">Mentoring bookshelf</a>).
+  </figcaption>
 </figure>
 
 My job is to keep you in the flow channel. I will challenge you to reach new heights and, at the same time, do my best to guide you through the new skills you will need to acquire. But this will only be fruitful if you share with me what you are getting from your experiences. Effective communication between mentor and mentee is essential. Therefore, it is vital that we meet regularly and constantly evaluate approaches, tools, learning, etc. I prefer a one-hour meeting per week, but modifications to this can also be agreed upon.
