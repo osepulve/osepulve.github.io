@@ -10,7 +10,7 @@ description: Resources and advice for my students and mentees.
 ## Philosophy
 <!-- This space is dedicated to the students I work with. Below you will find various resources, technical guides, and advice on navigating academia. -->
 
-My goal as a mentor is to inspire students to achieve their goals by creating an atmosphere that fosters critical thinking and high levels of engagement. I commit to guiding and supporting each student individually, taking the time to listen and offer help. My approach is one of professionalism, respect, and inclusion, offering students unwavering support in the unique challenges faced through their learning experiences.
+My goal as a mentor is to inspire students to achieve their goals by creating an atmosphere that fosters critical thinking and high levels of engagement. I commit to guiding and supporting each student individually, taking the time to listen and offer help. My approach is one of professionalism, respect, and inclusion.
 
 *“We are shaped and fashioned by what we love”* Johann Wolfgang von Goethe.
 
