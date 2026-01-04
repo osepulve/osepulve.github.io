@@ -18,7 +18,9 @@ We are not robots, so I am convinced we need to enjoy what we do to be productiv
 
 A fruitful academic relationship requires trust, which is built, first and foremost, on mutual respect. I am an open-minded, mildly extroverted person, passionate about nature and its functioning. My natural way of behaving is friendly and slightly informal. I will ask you how you are doing both at work and in life. However, if this does not suit you, or it is important for you to set boundaries, that is totally fine with me. In the long term, trust building is also related to our capacity to pay attention to details, and respecting your demands will help with this.
 
-I value diverse backgrounds and experiences. I have worked in three countries across four institutions (in four different languages!), each with a unique working culture. I advocate for gender equality, cultural diversity, and equal opportunities. One thing where I might be less open is that I do not tolerate any form of discrimination. If we can agree on this, we will do just fine.
+<!--I value diverse backgrounds and experiences. I have worked in three countries across four institutions (in four different languages!), each with a unique working culture. I advocate for gender equality, cultural diversity, and equal opportunities. One thing where I might be less open is that I do not tolerate any form of discrimination. If we can agree on this, we will do just fine.-->
+
+I value diverse backgrounds and experiences. I have worked in three countries across four institutions (in four different languages!), each with a unique working culture. I advocate for cultural diversity and equal opportunities. One thing where I might be less open is that I do not tolerate any form of discrimination. If we can agree on this, we will do just fine.
 
 I will try my best to share my experiences, give you advice and provide you with as many opportunities as possible for self- and scientific development. But I also expect ownership from you. The way I work with my mentees can be summarized in the following schematic:
 
