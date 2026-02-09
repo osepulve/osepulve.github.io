@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-04'
+  last_updated: '2026-02-09'
 papers:
   Spjye98AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -58,7 +58,7 @@ papers:
     title: "Convection\u2010diffusion competition within mixed layers of stratified natural waters"
     year: '2019'
   Spjye98AAAAJ:ULOm3_A8WrAC:
-    citations: 12
+    citations: 14
     title: Spatial variability of turbulent mixing from an underwater glider in a large, deep, stratified lake
     year: '2023'
   Spjye98AAAAJ:UeHWp8X0CEIC:
@@ -66,7 +66,7 @@ papers:
     title: "Efecto de la circulaci\xF3n barocl\xEDnica inducida por el viento en la mezcla vertical del fiordo Comau"
     year: '2015'
   Spjye98AAAAJ:UebtZRa9Y70C:
-    citations: 24
+    citations: 27
     title: "Chromium Cycling in Redox\u2010Stratified Basins Challenges \u03B453Cr Paleoredox Proxy Applications"
     year: '2022'
   Spjye98AAAAJ:W7OEmFMy1HYC:
@@ -81,12 +81,16 @@ papers:
     citations: 0
     title: 'When flow pathways can surprise you: Flow exchange in a multi-basin polymictic lake'
     year: '2023'
+  Spjye98AAAAJ:_Qo2XoVZTnwC:
+    citations: 0
+    title: Bioconvection in the wild
+    year: Unknown Year
   Spjye98AAAAJ:_kc_bZDykSQC:
     citations: 0
     title: 'Bioconvection in Lake Cadagno: the power of microorganisms'
     year: '2023'
   Spjye98AAAAJ:d1gkVwhDpl0C:
-    citations: 19
+    citations: 20
     title: Inhibited vertical mixing and seasonal persistence of a thin cyanobacterial layer in a stratified lake
     year: '2021'
   Spjye98AAAAJ:dhFuZR0502QC:
@@ -106,7 +110,7 @@ papers:
     title: Momentum, Heat, and Salt Budgets to Estimate Drag and Transfer Coefficients inside an Ice Shelf Basal Channel
     year: '2025'
   Spjye98AAAAJ:hqOjcs7Dif8C:
-    citations: 18
+    citations: 19
     title: "Detritus\u2010hosted methanogenesis sustains the methane paradox in an alpine lake"
     year: '2023'
   Spjye98AAAAJ:mVmsd5A6BfQC:
