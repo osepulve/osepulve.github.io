@@ -101,28 +101,22 @@
   ],
   "references": [
     {
-      "name": "Professor Alfred \"Johny\" Wüest",
+      "name": "<a href='https://scholar.google.com/citations?user=hgkgsdMAAAAJ&hl=en'>Prof. Alfred \"Johny\" Wüest</a>",
       "organization": "EPFL and Eawag",
-      "url": "https://scholar.google.com/citations?user=hgkgsdMAAAAJ&hl=en",
       "icon": "fa-solid fa-thumbtack",
       "reference": "PhD supervisor"
     },
     {
-      "name": "<a href='https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/damien-bouffard/show/'>Professor Damien Bouffard</a>",
+      "name": "<a href='https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/damien-bouffard/show/'>Prof. Damien Bouffard</a>",
       "organization": "Eawag",
-      "url": "https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/damien-bouffard/show/",
       "icon": "fa-solid fa-thumbtack",
       "reference": "PhD co-supervisor and first postdoc supervisor"
+    },
+    {
+      "name": "<a href='https://faculty.engineering.ucdavis.edu/forrest/'>Prof. Alexander Forrest/a>",
+      "organization": "UC Davis",
+      "icon": "fa-solid fa-thumbtack",
+      "reference": "Postdoc supervisor"
     }
   ],
-  "projects": [
-    {
-      "name": "",
-      "summary": "",
-      "highlights": ["", ""],
-      "startDate": "",
-      "endDate": "",
-      "url": ""
-    }
-  ]
 }
