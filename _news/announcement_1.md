@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-01-14 18:15:00
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+UC Davis Slocum Glider (unit 156) “Gull” was successfully deployed in Pine Island Bay, Amundsen Sea, Antarctica.
