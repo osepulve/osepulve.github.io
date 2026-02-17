@@ -439,16 +439,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Schimel/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-uc-davis-slocum-glider-unit-156-gull-was-successfully-deployed-in-pine-island-bay-amundsen-sea-antarctica",
+          title: 'UC Davis Slocum Glider (unit 156) “Gull” was successfully deployed in Pine Island...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
