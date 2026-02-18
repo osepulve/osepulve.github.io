@@ -113,10 +113,10 @@
       "reference": "PhD co-supervisor and first postdoc supervisor"
     },
     {
-      "name": "<a href='https://faculty.engineering.ucdavis.edu/forrest/'>Prof. Alexander Forrest/a>",
+      "name": "<a href='https://faculty.engineering.ucdavis.edu/forrest/'>Prof. Alexander Forrest</a>",
       "organization": "UC Davis",
       "icon": "fa-solid fa-thumbtack",
       "reference": "Postdoc supervisor"
     }
-  ],
+  ]
 }
