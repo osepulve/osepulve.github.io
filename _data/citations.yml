@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-11'
+  last_updated: '2026-02-18'
 papers:
   Spjye98AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -13,6 +13,10 @@ papers:
     citations: 0
     title: Small-scale, Short-term Seismic Field Survey on Milne Ice Shelf
     year: '2023'
+  Spjye98AAAAJ:4JMBOYKVnBMC:
+    citations: 0
+    title: "Hydrodynamics of a periodically wind\u2011forced small and narrow stratified basin: a large\u2011eddy simulation experiment"
+    year: '2018'
   Spjye98AAAAJ:4TOpqqG69KYC:
     citations: 0
     title: Summertime Glacial Meltwater Transport Near Dotson Ice Shelf
@@ -26,7 +30,7 @@ papers:
     title: "Caracterizaci\xF3n de la hidrodin\xE1mica del fiordo Comau y an\xE1lisis de su influencia en la distribuci\xF3n vertical de microalgas"
     year: '2014'
   Spjye98AAAAJ:9yKSN-GCB0IC:
-    citations: 68
+    citations: 70
     title: "Bacteria\u2010induced mixing in natural waters"
     year: '2017'
   Spjye98AAAAJ:M3ejUd6NZC8C:
@@ -45,6 +49,10 @@ papers:
     citations: 0
     title: The maintenance of intermediate redox states in deep waters of Lake Zug
     year: '2025'
+  Spjye98AAAAJ:RHpTSmoSYBkC:
+    citations: 0
+    title: 'Correction to: Inhibited vertical mixing and seasonal persistence of a thin cyanobacterial layer in a stratified lake (vol 83, 38, 2021)'
+    year: '2021'
   Spjye98AAAAJ:Se3iqnhoufwC:
     citations: 0
     title: Submesoscale eddy-driven mixing and heat transport observed beneath the calving edge of the Nansen Ice Shelf
@@ -66,7 +74,7 @@ papers:
     title: "Efecto de la circulaci\xF3n barocl\xEDnica inducida por el viento en la mezcla vertical del fiordo Comau"
     year: '2015'
   Spjye98AAAAJ:UebtZRa9Y70C:
-    citations: 28
+    citations: 29
     title: "Chromium Cycling in Redox\u2010Stratified Basins Challenges \u03B453Cr Paleoredox Proxy Applications"
     year: '2022'
   Spjye98AAAAJ:W7OEmFMy1HYC:
@@ -90,7 +98,7 @@ papers:
     title: 'Bioconvection in Lake Cadagno: the power of microorganisms'
     year: '2023'
   Spjye98AAAAJ:d1gkVwhDpl0C:
-    citations: 20
+    citations: 22
     title: Inhibited vertical mixing and seasonal persistence of a thin cyanobacterial layer in a stratified lake
     year: '2021'
   Spjye98AAAAJ:dhFuZR0502QC:
@@ -114,7 +122,7 @@ papers:
     title: "Detritus\u2010hosted methanogenesis sustains the methane paradox in an alpine lake"
     year: '2023'
   Spjye98AAAAJ:mVmsd5A6BfQC:
-    citations: 17
+    citations: 16
     title: Combined Earth observations reveal the sequence of conditions leading to a large algal bloom in Lake Geneva
     year: '2024'
   Spjye98AAAAJ:qUcmZB5y_30C:
@@ -122,7 +130,7 @@ papers:
     title: Turbulence Characteristics of Ice-Free Radiatively Driven Convection in a Deep, Unstratified Lake
     year: '2025'
   Spjye98AAAAJ:qjMakFHDy7sC:
-    citations: 17
+    citations: 18
     title: "Persistence of bioconvection\u2010induced mixed layers in a stratified lake"
     year: '2021'
   Spjye98AAAAJ:roLk4NBRz8UC:
@@ -134,6 +142,6 @@ papers:
     title: 'Hydrodynamics of a periodically wind-forced small and narrow stratified basin: A large-eddy simulation experiment'
     year: '2019'
   Spjye98AAAAJ:zYLM7Y9cAGgC:
-    citations: 1
+    citations: 3
     title: 'Mixing processes and their ecological implications: From vertical to lateral variability in stratified lakes'
     year: '2020'
