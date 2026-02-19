@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visit [Expedition to Antarctica: UC Davis Tracks Melting Glaciers](https://www.ucdavis.edu/climate/news/expedition-antarctica-uc-davis-tracks-melting-thwaites-glacier) to know more about our glider deployment in Antarctica.
+Visit [Expedition to Antarctica: UC Davis Tracks Melting Glaciers](https://www.ucdavis.edu/climate/news/expedition-antarctica-uc-davis-tracks-melting-thwaites-glacier) to know more about our latest glider deployment.
