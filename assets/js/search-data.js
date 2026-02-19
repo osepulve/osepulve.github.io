@@ -427,7 +427,7 @@ ninja.data = [{
           section: "News",},{id: "news-slocum-glider-gull-was-successfully-recovered-after-its-first-2026-mission-in-pine-island-bay",
           title: 'Slocum Glider “Gull” was successfully recovered after its first 2026 mission in Pine...',
           description: "",
-          section: "News",},{id: "news-visit-expedition-to-antarctica-uc-davis-tracks-melting-glaciers-to-know-more-about-our-glider-deployment-in-antarctica",
+          section: "News",},{id: "news-visit-expedition-to-antarctica-uc-davis-tracks-melting-glaciers-to-know-more-about-our-latest-glider-deployment",
           title: 'Visit Expedition to Antarctica: UC Davis Tracks Melting Glaciers to know more about...',
           description: "",
           section: "News",},{id: "projects-project-1",
