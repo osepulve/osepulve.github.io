@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-24'
+  last_updated: '2026-05-08'
 papers:
   Spjye98AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -118,7 +118,7 @@ papers:
     title: Momentum, Heat, and Salt Budgets to Estimate Drag and Transfer Coefficients inside an Ice Shelf Basal Channel
     year: '2025'
   Spjye98AAAAJ:hqOjcs7Dif8C:
-    citations: 20
+    citations: 21
     title: "Detritus\u2010hosted methanogenesis sustains the methane paradox in an alpine lake"
     year: '2023'
   Spjye98AAAAJ:j3f4tGmQtD8C:
@@ -137,6 +137,10 @@ papers:
     citations: 19
     title: "Persistence of bioconvection\u2010induced mixed layers in a stratified lake"
     year: '2021'
+  Spjye98AAAAJ:r0BpntZqJG4C:
+    citations: 0
+    title: 'The maintenance of stable transitional redox states in Lake Zug (Switzerland): Mechanisms and biogeochemical implications'
+    year: '2026'
   Spjye98AAAAJ:roLk4NBRz8UC:
     citations: 35
     title: Observations of submesoscale eddy-driven heat transport at an ice shelf calving front
