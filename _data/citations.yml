@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-17'
+  last_updated: '2026-08-03'
 papers:
   Spjye98AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -66,7 +66,7 @@ papers:
     title: "Convection\u2010diffusion competition within mixed layers of stratified natural waters"
     year: '2019'
   Spjye98AAAAJ:ULOm3_A8WrAC:
-    citations: 16
+    citations: 17
     title: Spatial variability of turbulent mixing from an underwater glider in a large, deep, stratified lake
     year: '2023'
   Spjye98AAAAJ:UeHWp8X0CEIC:
@@ -74,7 +74,7 @@ papers:
     title: "Efecto de la circulaci\xF3n barocl\xEDnica inducida por el viento en la mezcla vertical del fiordo Comau"
     year: '2015'
   Spjye98AAAAJ:UebtZRa9Y70C:
-    citations: 31
+    citations: 32
     title: "Chromium Cycling in Redox\u2010Stratified Basins Challenges \u03B453Cr Paleoredox Proxy Applications"
     year: '2022'
   Spjye98AAAAJ:W7OEmFMy1HYC:
@@ -83,7 +83,7 @@ papers:
     year: '2021'
   Spjye98AAAAJ:Y0pCki6q_DkC:
     citations: 0
-    title: "Implementation of a 1D k-\u025B model for studying the vertical mixing in Comau fjord, Chile"
+    title: "Implementation of a 1D k-\u220A model for studying the vertical mixing in Comau fjord, Chile"
     year: '2014'
   Spjye98AAAAJ:YOwf2qJgpHMC:
     citations: 0
@@ -99,7 +99,7 @@ papers:
     year: '2023'
   Spjye98AAAAJ:d1gkVwhDpl0C:
     citations: 23
-    title: Inhibited vertical mixing and seasonal persistence of a thin cyanobacterial layer in a stratified lake
+    title: 'Inhibited vertical mixing and seasonal persistence of a thin cyanobacterial layer in a stratified lake: BF Castro et al.'
     year: '2021'
   Spjye98AAAAJ:dhFuZR0502QC:
     citations: 0
@@ -118,11 +118,11 @@ papers:
     title: Momentum, Heat, and Salt Budgets to Estimate Drag and Transfer Coefficients inside an Ice Shelf Basal Channel
     year: '2025'
   Spjye98AAAAJ:hqOjcs7Dif8C:
-    citations: 23
+    citations: 22
     title: "Detritus\u2010hosted methanogenesis sustains the methane paradox in an alpine lake"
     year: '2023'
   Spjye98AAAAJ:iH-uZ7U-co4C:
-    citations: 5
+    citations: 4
     title: Observations of submesoscale eddy-driven heat transport at an ice shelf calving front, Communications Earth and Environment, 3
     year: '2022'
   Spjye98AAAAJ:j3f4tGmQtD8C:
@@ -130,7 +130,7 @@ papers:
     title: Enhanced turbulent mixing across the lateral constriction of a two-basin lake
     year: '2026'
   Spjye98AAAAJ:mVmsd5A6BfQC:
-    citations: 22
+    citations: 23
     title: Combined Earth observations reveal the sequence of conditions leading to a large algal bloom in Lake Geneva
     year: '2024'
   Spjye98AAAAJ:qUcmZB5y_30C:
@@ -146,7 +146,7 @@ papers:
     title: 'The maintenance of stable transitional redox states in Lake Zug (Switzerland): Mechanisms and biogeochemical implications'
     year: '2026'
   Spjye98AAAAJ:roLk4NBRz8UC:
-    citations: 38
+    citations: 36
     title: Observations of submesoscale eddy-driven heat transport at an ice shelf calving front
     year: '2022'
   Spjye98AAAAJ:u-x6o8ySG0sC:
